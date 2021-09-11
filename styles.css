@@ -47,15 +47,40 @@ body{
     color : #BB86FC;
 }
 
-.social ul li{
-    display: inline;
-    border-top: none;
+.social ul {
+    position: absolute;
+    bottom: 20px;
+    left: 0.8%;
 }
-
 .social ul li {
     display:inline; 
     text-align:center;
     position: relative; 
     margin:0 auto;
-    padding: 15px;
+    padding: 5px;
+
+}
+
+.social ul li a{
+    color : #CF6679
+}
+
+.about-text{
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    font-weight: 200;
+    margin:0 auto;
+}
+
+.home-text{
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    font-weight: 200;
+    margin:0 auto;
 }
