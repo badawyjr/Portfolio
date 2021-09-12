@@ -8,9 +8,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Portfolio | Adham Badawy</title>
-</head>
-<body>
-    <section>
+
+
     <div class="sidebar">
         <ul class="nav-menu">
             <li><a href="#">Home</a></li>
@@ -22,21 +21,28 @@
     </div>
     <div class="social">
         <ul>
-            <li><a href="https://www.linkedin.com" class="fa fa-linkedin"></a></li>
-            <li><a href="https://www.github.com" class="fa fa-github"></a></li>
+            <li><a href="https://www.linkedin.com/in/badawyjr/" class="fa fa-linkedin"></a></li>
+            <li><a href="https://github.com/badawyjr" class="fa fa-github"></a></li>
             <li><a href="https://www.facebook.com/" class="fa fa-facebook"></a></li>
             <li><a href="https://www.instagram.com" class="fa fa-instagram"></a></li>
         </ul>
     </div>
 
+
+
+</head>
+<body>
     <div class="mainpage">
         <div class="home">
         <h1>Hello ,<br>I'm Adham</h1>
             <br><h4>Computer Science Student / Programmer</h4>
-            <br><br><button class="contactbtn">Contact Me !</button>
+            <br><br>
+            <form action="#contact">
+                <input type="submit" class="contactbtn" value="Contact Me !"/>
+            </form>
         </div>
 
-            <div id="about" class="about">
+            <div id="about" class="section">
                 <h1>About Me</h1>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nesciunt eius a cumque dignissimos quos voluptates architecto temporibus excepturi maiores sapiente, numquam sequi placeat iusto nihil? Porro id aliquid aut!
@@ -44,7 +50,7 @@
 
             </div>
 
-            <div id="portfolio" class="portfolio">
+            <div id="portfolio" class="section">
                 <h1>Education <br>& Experience</h1>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nesciunt eius a cumque dignissimos quos voluptates architecto temporibus excepturi maiores sapiente, numquam sequi placeat iusto nihil? Porro id aliquid aut!
@@ -52,15 +58,16 @@
 
             </div>
 
-            <div id="projects" class="projects">
+            <div id="projects" class="section">
                 <h1>My Projects</h1>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nesciunt eius a cumque dignissimos quos voluptates architecto temporibus excepturi maiores sapiente, numquam sequi placeat iusto nihil? Porro id aliquid aut!
                 </p>
+                <button class="warningbtn"><i class="fa fa-download"></i> Download CV</button>
 
             </div>
 
-            <div id="contact" class="contact-me">
+            <div id="contact" class="section">
                 <h1>Contact me</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quasi perferendis dolor facilis est numquam culpa, ipsum enim, nobis quis necessitatibus, inventore beatae omnis molestiae quam nihil sunt corporis voluptate.</p>
                 <form action="#" class="form" id="contact-form">
@@ -70,7 +77,14 @@
                         <textarea form="contact-form" class="msg-input" placeholder="Message"></textarea>
                         <br><input type="submit" class="contactbtn" value="Send Message">    
                 </form>  
-        </div>
+                <button class="alertbtn"><i class="fa fa-bug"></i> Report Bug</button>
+            </div>
     </div>
+    <!-- <div class="language">
+        <a href="#">EN</a>
+         | 
+        <a href="#">ع</a>
+    </div>
+    -->
 </body>
 </html>

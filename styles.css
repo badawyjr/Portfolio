@@ -60,12 +60,18 @@ p{
     background: #8d8d8d;
 }
 
+.language{
+    font-size: 14px;
+    color: #8d8d8d;
+    position: relative;
+    margin-left: 20px;
+    margin-top: 10px;
+}
 
 .sidebar{
     display: flex;
     align-items: center;
     position: fixed;
-    width : 8.4%;
     height : 100%;
     /*z-index: 1;
     top: 0;
@@ -76,8 +82,8 @@ p{
 }
 
 .sidebar ul li {
-    display:block; 
-    text-align:center;
+    display:flex; 
+    justify-content: center;
     position: relative; 
     margin:0 auto;
     padding: 15px;
@@ -93,7 +99,6 @@ p{
 }
 
 .sidebar ul li a:hover{
-    font-weight: bold;
     color : #08FDD8;
 }
 
@@ -104,10 +109,10 @@ p{
 }
 .social ul li {
     display:inline; 
-    text-align:center;
+    justify-content:center;
     position: relative; 
     margin:0 auto;
-    padding: 4px;
+    padding: 2px;
 
 }
 
@@ -162,15 +167,36 @@ p{
     position: absolute;
 }
 
-
-.alertbtn:hover{
-    color: #1d1d1d;
-    background-color: #FF2253
+.warningbtn{
+    display: inline-block;
+    padding: 0.7em 1.7em;
+    border: 0.1em solid #CCFF00;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    background-color: transparent;
+    color: #CCFF00;
+    text-align: center;
+    transition: all 0.2s;
+    position: absolute;
 }
 
 .contactbtn:hover{
     color: #1d1d1d;
-    background-color: #08FDD8
+    background-color: #08FDD8;
+}
+
+.alertbtn:hover{
+    color: #1d1d1d;
+    background-color: #FF2253;
+}
+
+.warningbtn:hover{
+    color: #1d1d1d;
+    background-color: #CCFF00;
 }
 
 .mainpage{
@@ -178,21 +204,14 @@ p{
 }
 
 .home{
-    margin-bottom: 300px; 
+    margin-bottom: 300px;
+}
+.section{
+    margin-top: 50px;
+    margin-bottom: 300px;
 }
 
-.portfolio{
-    margin-top: 300px;
-    margin-bottom: 50px;
-}
-
-.projects{
-    margin-top: 300px;
-    margin-bottom: 50px;
-}
-
-.contact-me{
-    margin-top: 300px;
+.section:last-child{
     margin-bottom: 50px;
 }
 
