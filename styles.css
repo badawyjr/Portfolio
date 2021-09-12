@@ -4,14 +4,17 @@
     src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
 }
 
-/*#08FDD8*/
-
 *{
     font-family: "San Francisco";
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
+}
+
+input{
+    display: inline-block;
+    appearance: auto;
 }
 
 body{
@@ -46,7 +49,11 @@ p{
 }
 
 ::-webkit-scrollbar-thumb{
-    background: #2b2b2b;
+    background: #3b3b3b;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #8d8d8d;
 }
 
 
@@ -120,7 +127,7 @@ p{
 
 .contactbtn{
     display: inline-block;
-    padding: 0.6em 1.7em;
+    padding: 0.7em 1.7em;
     border: 0.1em solid #08FDD8;
     margin: 0 0.3em 0.3em 0;
     border-radius: 0.12em;
@@ -134,9 +141,36 @@ p{
     transition: all 0.2s;
 }
 
+.alertbtn{
+    display: inline-block;
+    padding: 0.7em 1.7em;
+    border: 0.1em solid #FF2253;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    background-color: transparent;
+    color: #FF2253;
+    text-align: center;
+    transition: all 0.2s;
+    position: absolute;
+}
+
+
+.alertbtn:hover{
+    color: #1d1d1d;
+    background-color: #FF2253
+}
+
 .contactbtn:hover{
     color: #1d1d1d;
     background-color: #08FDD8
+}
+
+.mainpage{
+    position: absolute;
 }
 
 .home{
@@ -169,7 +203,6 @@ p{
     padding: 15px;
     margin : 4px;
     font-size: 16px;
-    width: 40%;
 }
 
 .medium-input{
@@ -179,7 +212,7 @@ p{
     padding: 15px;
     margin: 4px;
     font-size: 16px;
-    width: 40%;    
+    width: fit-content;
 }
 
 .large-input{
@@ -193,7 +226,7 @@ p{
 }
 
 .msg-input{
-    width: 40%;
+    width: 100%;
     background: #2b2b2b;
     color: #8d8d8d;
     min-height: 120px;
@@ -201,4 +234,5 @@ p{
     padding: 15px;
     margin: 4px;
     font-size: 16px;
+    margin-bottom: 25px;
 }
