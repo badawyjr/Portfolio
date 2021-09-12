@@ -4,6 +4,8 @@
     src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
 }
 
+/*#08fdd8*/
+
 *{
     font-family: "San Francisco";
     margin: 0;
@@ -16,11 +18,22 @@ body{
     background-color: #272727;
 }
 
+h1{
+    color: #BB86FC;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+h4{
+    color: white;
+    font-weight: lighter;
+}
+
 .sidebar{
     display: flex;
     align-items: center;
     position: fixed;
-    width : 8.3%;
+    width : 8.4%;
     height : 100%;
     background: #121212; 
 }
@@ -48,7 +61,7 @@ body{
 }
 
 .social ul {
-    position: absolute;
+    position: fixed;
     bottom: 20px;
     left: 0.8%;
 }
@@ -57,26 +70,20 @@ body{
     text-align:center;
     position: relative; 
     margin:0 auto;
-    padding: 5px;
+    padding: 4px;
 
 }
 
 .social ul li a{
-    color : #CF6679
+    color : grey;
 }
 
-.about-text{
-    text-align: center;
-    color: white;
-    position: absolute;
-    top: 40%;
-    left: 10%;
-    font-weight: 200;
-    margin:0 auto;
+.social ul li a:hover{
+    color : #BB86FC;
 }
 
 .home-text{
-    text-align: center;
+    text-align: left;
     color: white;
     position: absolute;
     top: 40%;
@@ -84,3 +91,41 @@ body{
     font-weight: 200;
     margin:0 auto;
 }
+
+.contactbtn{
+    display: inline-block;
+    padding: 0.6em 1.7em;
+    border: 0.1em solid #BB86FC;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    background-color: #272727;
+    color: #BB86FC;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.contactbtn:hover{
+    color: #272727;
+    background-color: #BB86FC
+}
+
+
+.contact-me{
+    margin-top: 300px;
+    margin-bottom: 50px;
+}
+
+.small-input{
+    background-color: darkgray;
+}
+
+.large-input{
+    width: 100%;
+    background-color: darkgray;
+}
+
+  
