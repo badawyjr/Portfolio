@@ -15,18 +15,30 @@
 }
 
 body{
-    background-color: #272727;
+    background-color: #1d1d1d;
 }
 
 h1{
     color: #08FDD8;
-    font-size: 42px;
+    font-size: 56px;
     font-weight: bold;
+    
 }
 
 h4{
     color: white;
     font-weight: lighter;
+}
+
+p{
+    display: block;
+    justify-content: left;
+    margin-block-start: 1em;
+    margin-inline-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-start: 0px;
+    padding: 10px;
+    width: 60%;
 }
 
 .sidebar{
@@ -35,6 +47,11 @@ h4{
     position: fixed;
     width : 8.4%;
     height : 100%;
+    /*z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    */
     background: #121212; 
 }
 
@@ -44,15 +61,15 @@ h4{
     position: relative; 
     margin:0 auto;
     padding: 15px;
-    border-bottom: 1px solid #272727;
+    border-bottom: 1px solid #1d1d1d;
 }
 
 .sidebar ul li:first-child {
-    border-top: 1px solid #272727;
+    border-top: 1px solid #1d1d1d;
 }
 
 .sidebar ul li a{
-    color : grey;
+    color : #909096;
 }
 
 .sidebar ul li a:hover{
@@ -75,17 +92,17 @@ h4{
 }
 
 .social ul li a{
-    color : grey;
+    color : #909096;
 }
 
 .social ul li a:hover{
     color : #08FDD8;
 }
 
-.home-text{
+.mainpage{
     text-align: left;
     color: white;
-    position: absolute;
+    position: relative;
     top: 40%;
     left: 10%;
     font-weight: 200;
@@ -102,28 +119,77 @@ h4{
     text-decoration: none;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
-    background-color: #272727;
-    color: #BB86FC;
+    background-color: #1d1d1d;
+    color: #08FDD8;
     text-align: center;
     transition: all 0.2s;
 }
 
 .contactbtn:hover{
-    color: #272727;
+    color: #1d1d1d;
     background-color: #08FDD8
 }
 
+.home{
+    margin-bottom: 300px; 
+}
+
+.portfolio{
+    margin-top: 300px;
+    margin-bottom: 50px;
+}
+
+.projects{
+    margin-top: 300px;
+    margin-bottom: 50px;
+}
 
 .contact-me{
     margin-top: 300px;
     margin-bottom: 50px;
 }
 
+.form{
+    width: 40%;
+}
+
 .small-input{
-    background-color: darkgray;
+    background: #2b2b2b;
+    color: #8d8d8d;
+    border: none;
+    padding: 15px;
+    margin : 4px;
+    font-size: 16px;
+    width: 40%;
+}
+
+.medium-input{
+    background: #2b2b2b;
+    color: #8d8d8d;
+    border: none;
+    padding: 15px;
+    margin: 4px;
+    font-size: 16px;
+    width: 40%;    
 }
 
 .large-input{
     width: 100%;
-    background-color: darkgray;
+    background: #2b2b2b;
+    color: #8d8d8d;
+    border: none;
+    padding: 15px;
+    margin: 4px;
+    font-size: 16px;
+}
+
+.msg-input{
+    width: 40%;
+    background: #2b2b2b;
+    color: #8d8d8d;
+    min-height: 120px;
+    border: none;
+    padding: 15px;
+    margin: 4px;
+    font-size: 16px;
 }
