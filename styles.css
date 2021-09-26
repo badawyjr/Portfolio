@@ -14,6 +14,7 @@ html{
     padding: 0;
     list-style: none;
     text-decoration: none;
+    cursor: default;
 }
 
 *::before,*::after {
@@ -61,7 +62,7 @@ section{
     display: flex;
     flex-direction: column;
     margin-top: 50px;
-    margin-bottom: 300px;
+    margin-bottom: 50px;
 }
 
 section p{
@@ -136,6 +137,7 @@ section:last-child{
 
 .sidebar nav a:hover{
     color : #08FDD8;
+    cursor: pointer;
 }
 
 .social ul {
@@ -157,6 +159,7 @@ section:last-child{
 
 .social ul li a:hover{
     color : #08FDD8;
+    cursor: pointer;
 }
 
 .mainpage{
@@ -263,6 +266,7 @@ section:last-child{
 
 .form{
     width: 40%;
+    padding: 20px;
 }
 
 /* #active{
@@ -278,6 +282,7 @@ section:last-child{
     margin: 4px 0 4px 0;
     font-size: 16px;
     align-content: stretch;
+    cursor: text;
 }
 
 
@@ -289,6 +294,7 @@ section:last-child{
     padding: 15px;
     margin: 4px 0 4px 0;
     font-size: 16px;
+    cursor: text;
 }
 
 .msg-input{
@@ -301,6 +307,7 @@ section:last-child{
     margin: 4px 0 4px 0;
     font-size: 16px;
     margin-bottom: 25px;
+    cursor: text;
 }
 
 .timeline{
@@ -318,6 +325,7 @@ section:last-child{
 .project-cards{
     margin-top : 75px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: left;
     line-height: 1.6;
 }
@@ -332,6 +340,7 @@ section:last-child{
     border-radius: 0.25rem;
     overflow: hidden;
     transition: transform 300ms ease;
+    flex-basis: 25%;
 
 }
 
@@ -366,4 +375,17 @@ section:last-child{
     color: rgb(255 255 255 / 0.85);
     margin-top: 1rem;
     width: 100%;
+}
+
+.skills ul{
+    padding: 1rem;
+}
+
+.skills ul li{
+    list-style: inside;
+    padding: 10px 0;
+}
+
+.skills ul li svg{
+    padding: 2px 2px 0 2px;
 }
