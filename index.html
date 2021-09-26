@@ -2,22 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" >
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Portfolio | Adham Badawy</title>
 
+</head>
+<body>
+    <!-- SIDEBAR -->
 
     <div class="sidebar">
-        <ul class="nav-menu">
-            <li><a href="#">Home</a></li>
+        <!-- <ul>
+            <li><a href="#" class = "active">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact me</a></li>
-        </ul>
+        </ul> -->
+        <nav>
+            <a href="#" class = "active">Home</a>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact me</a>
+        </nav>
+
     </div>
     <div class="social">
         <ul>
@@ -29,62 +41,147 @@
     </div>
 
 
-
-</head>
-<body>
+    
     <div class="mainpage">
-        <div class="home">
-        <h1>Hello ,<br>I'm Adham</h1>
+
+        <section id="">
+        <h1>Hello,<br>I'm Adham</h1>
             <br><h4>Computer Science Student / Programmer</h4>
             <br><br>
             <form action="#contact">
                 <input type="submit" class="contactbtn" value="Contact Me !"/>
             </form>
-        </div>
+        </section>
+        <section id="about">
+            <h1>About Me</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nesciunt eius a cumque dignissimos quos voluptates architecto temporibus excepturi maiores sapiente, numquam sequi placeat iusto nihil? Porro id aliquid aut!
+            </p>
 
-            <div id="about" class="section">
-                <h1>About Me</h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nesciunt eius a cumque dignissimos quos voluptates architecto temporibus excepturi maiores sapiente, numquam sequi placeat iusto nihil? Porro id aliquid aut!
-                </p>
+        </section>
 
-            </div>
 
-            <div id="portfolio" class="section">
+            <section id="portfolio">
                 <h1>Education <br>& Experience</h1>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nesciunt eius a cumque dignissimos quos voluptates architecto temporibus excepturi maiores sapiente, numquam sequi placeat iusto nihil? Porro id aliquid aut!
                 </p>
-
+            
+            <div class="timeline">
+                <img src="assets/timeline.png">
             </div>
+                <h1>Skills</h1><br>
+                    <ul>
+                        <li><i class="fab fa-java"> </i> Java</li>
+                        <li><i class="fa fa-python">Python</i></li>
+                        <li><i class="fa fa-node-js">Node.js</i></li>
+                        <li><i class="fa fa-html5 ">HTML</i>/<i class="fa fa-css3-alt">CSS</i></li>
+                    </ul>
 
-            <div id="projects" class="section">
+
+                    <div class="skills">
+                        
+                        
+
+
+                    <!--    <div class="skill">
+                                <h2>Programming</h2>
+                                    <ul>
+                                        <li><h3>Java/JEE</h3>
+                                            <span class="bar"><span class="java"></span></span>
+                                        </li>
+                                        <li><h3>Python</h3>
+                                            <span class="bar"><span class="python"></span></span>
+                                        </li>
+                                        <li><h3>C/C++</h3>
+                                            <span class="bar"><span class="c"></span></span>
+                                        </li>
+                                        <li><h3>JavaScript</h3>
+                                            <span class="bar"><span class="js"></span></span>
+                                        </li>
+                                        <li><h3>HTML5/CSS3</h3>
+                                            <span class="bar"><span class="html-css"></span></span>
+                                        </li>
+                                    </ul>
+                            </div>
+
+                <div class="skill">
+                    <h2>Other</h2>
+                        <ul>
+                            <li><h3>Java/JEE</h3>
+                                <span class="bar"><span class="java"></span></span>
+                            </li>
+                            <li><h3>Python</h3>
+                                <span class="bar"><span class="python"></span></span>
+                            </li>
+                            <li><h3>C/C++</h3>
+                                <span class="bar"><span class="c"></span></span>
+                            </li>
+                            <li><h3>JavaScript</h3>
+                                <span class="bar"><span class="js"></span></span>
+                            </li>
+                            <li><h3>HTML5/CSS3</h3>
+                                <span class="bar"><span class="html-css"></span></span>
+                            </li>
+                        </ul>
+                </div>    -->  
+                
+            </div>
+            
+            <!-- <a href = "assets/cv.pdf" download="AdhamBADAWY_CV"><button class="warningbtn"><i class="fa fa-download"></i> Download CV</button></a> -->              
+        </section>
+
+
+            <section id="projects">
                 <h1>My Projects</h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nesciunt eius a cumque dignissimos quos voluptates architecto temporibus excepturi maiores sapiente, numquam sequi placeat iusto nihil? Porro id aliquid aut!
-                </p>
-                <button class="warningbtn"><i class="fa fa-download"></i> Download CV</button>
+                    <div class="project-cards">
 
-            </div>
+                        <div class="card">
+                            <div class="card-content">
+                            <h2 class="project-title">Pathfinding</h2>
+                            <p class="project-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum asperiores mollitia nam, ducimus eius quo. Quaerat, deleniti quia? Asperiores quam quod odit quo dolores mollitia reprehenderit necessitatibus recusandae omnis aliquid?</p>
+                            
+                            </div>   
+                        </div> 
 
-            <div id="contact" class="section">
+                        <div class="card">
+                            <div class="card-content">
+                            <h2 class="project-title">Cryptochat</h2>
+                            <p class="project-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum asperiores mollitia nam, ducimus eius quo. Quaerat, deleniti quia? Asperiores quam quod odit quo dolores mollitia reprehenderit necessitatibus recusandae omnis aliquid?</p>
+
+                            </div>   
+                        </div> 
+
+                        <div class="card">
+                            <div class="card-content">
+                            <h2 class="project-title">2D/3D Cruves</h2>
+                            <p class="project-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum asperiores mollitia nam, ducimus eius quo. Quaerat, deleniti quia? Asperiores quam quod odit quo dolores mollitia reprehenderit necessitatibus recusandae omnis aliquid?</p>
+                            
+                            </div>   
+                        </div> 
+                        
+                        <div class="card">
+                            <div class="card-content">
+                            <h2 class="project-title">Placeholder</h2>
+                            <p class="project-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum asperiores mollitia nam, ducimus eius quo. Quaerat, deleniti quia? Asperiores quam quod odit quo dolores mollitia reprehenderit necessitatibus recusandae omnis aliquid?</p>
+                            
+                            </div>   
+                        </div> 
+
+                    </div>           
+            </section>
+            <section id="contact">
                 <h1>Contact me</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quasi perferendis dolor facilis est numquam culpa, ipsum enim, nobis quis necessitatibus, inventore beatae omnis molestiae quam nihil sunt corporis voluptate.</p>
                 <form action="#" class="form" id="contact-form">
-                        <input type="text" placeholder="Name" class="small-input">
-                        <input type="email" placeholder="Email" class="medium-input">
+                        <input type="text" placeholder="Name" class="large-input">
+                        <input type="email" placeholder="Email" class="large-input">
                         <input type="text" placeholder="Subject" class="large-input">
                         <textarea form="contact-form" class="msg-input" placeholder="Message"></textarea>
-                        <br><input type="submit" class="contactbtn" value="Send Message">    
-                </form>  
-                <button class="alertbtn"><i class="fa fa-bug"></i> Report Bug</button>
-            </div>
+                        <br><input type="submit" class="msgbtn" value="Send Message">    
+                </form>
+            </section>
     </div>
-    <!-- <div class="language">
-        <a href="#">EN</a>
-         | 
-        <a href="#">ع</a>
-    </div>
-    -->
+    <script src="main.js"></script>
 </body>
 </html>
